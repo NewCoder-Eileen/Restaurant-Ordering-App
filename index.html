@@ -1,0 +1,63 @@
+<html>
+    <head>
+       <link rel="stylesheet" href="index.css">
+       <!-- Google Fonts Smythe and Inter-->
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Smythe&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>Jimmy's Diner</h1>
+            <h2>The best burgers and pizzas in town</h2>
+            <!-- <img src="images/bg-img.png"> -->
+        </header>
+        <section id="items-section">
+            <!-- <div id="ITEM" class="item">
+                <div class="graphic">
+                    <img src="images/ITEM.png">
+                </div>
+                <div class="item-info">
+                    <p class="title">ITEM</p>
+                    <p class="description">description</p>
+                    <p class="price">$PRICE</p>
+                </div>
+                <button class="add-btn">+</button>
+            </div> -->
+        </section>
+
+        
+        <section id="checkout-section" class="checkout-section">
+            <h2 class="title" id="your-order">Your order</h2>
+            <div id="ordered-items">
+                <!-- <div class="ordered-item">
+                    <p class="title">Pizza</p>
+                    <button class="remove-btn">remove</button>
+                    <p class="price">$14</p>
+                </div> -->
+            </div>
+            <div id="total-price-div" class="ordered-item">
+                <p class="title">Total price:</p>
+                <p id="total-price-el" class="price">$0</p>
+            </div>
+            <button id="complete-order-btn" class="purchase-btn">Complete order</button>
+        </section>
+        
+        <div id="payement-modal" class="hidden">
+            <h2 id="modal-title">Enter card details</h2>
+            <form>
+                <input type="text" id="name-input" placeholder="Enter your name" required>
+                <input type="text" id="card-number-input" placeholder="Enter card number" required>
+                <input type="text" id="cvv-input" placeholder="Enter CVV" required>
+                <button id="pay-btn" class="purchase-btn">Pay</button>
+            </form>
+        </div>
+        
+        <div id="order-complete" class="hidden">
+            <p id="complete-msg">Thanks, NAME! Your order is on its way!</p>
+        </div>
+        
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
+
